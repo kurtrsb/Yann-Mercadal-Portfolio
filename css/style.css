@@ -124,6 +124,7 @@ h1{
 }
   
 .first-text {
+    margin-top: -10vw;
     width: 25ch;
     animation: appear 2s,steps(25);
     white-space: nowrap;
