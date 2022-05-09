@@ -28,7 +28,7 @@ body{
 
 a {
     text-decoration: none;
-    color: #91FFFF;
+    color:#91FFFF;
 }
 
 nav {
@@ -71,18 +71,15 @@ nav {
     font-size: small;
     color: #91FFFF;
     font-weight: 500;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 25%;
+    padding-left: 25%;
     margin-top: 5%;
     transition: all 500ms ease;
 }
 
 .nav-body li:hover{
+    text-align: center;
     transition: all 500ms ease;
-    transform: scale(1.5);
-}
-
-.nav-body li:un{
     transform: scale(1.5);
 }
 
@@ -137,5 +134,12 @@ h1{
     font-size: 2em;
 }
   
-
+.active-link{
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #91FFFF;
+    border-radius: 5px;
+    color: #191919;
+}
 
