@@ -117,13 +117,13 @@ h1{
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    place-items: center;
-    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }
   
 .first-text {
-    margin-top: 100px;
     width: 25ch;
     animation: appear 2s,steps(25);
     white-space: nowrap;
@@ -133,7 +133,6 @@ h1{
 
 .second-text {
     opacity: 0;
-    margin-top: -550px;
     width: 27ch;
     animation: appear 2s forwards,steps(27);
     animation-delay: 2s;
