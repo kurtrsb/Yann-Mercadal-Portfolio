@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Montserrat', cursive;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 @keyframes appear {
@@ -14,8 +15,23 @@
     }
 }
 
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+html, body{
+    min-height: 100vh;
+}
+
 body{
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-long {
@@ -39,6 +55,11 @@ nav {
 .nav-img{
     width: 50px;
     height: 50px;
+}
+
+.nav-img:hover{
+    transition: all 1s ease;
+    transform: rotate(360deg);
 }
 
 .nav-p{
@@ -103,11 +124,11 @@ h1{
 }
 
 .wrapper {
-    height: 100vh;
+    min-height: 95vh;
     background-image: url("../image/IMG_20220509_094039_219.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -142,10 +163,14 @@ h1{
     color: #191919;
 }
 
+.chest{
+    min-height: 100%;
+}
+
 footer{
-    left: 0;
-    bottom: 0;
+    margin-top: auto;
     height: 150px;
+    width: 100%;
     background-color: #191919;
     display: flex;
     justify-content: center;
@@ -160,12 +185,15 @@ footer{
     flex-flow: row wrap;
 }
 
-.fr{
+.fr, .en{
+    opacity: 0;
     margin: 2.5vw;
     padding: 25px;
     padding-top: 30px;
     border: solid #191919 5px;
     max-width: 25vw;
+    animation: fadein 4s forwards;
+    animation-delay: 1s;
 }
 
 .fr .logo{
@@ -178,14 +206,6 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
     border: solid #191919 5px;
-}
-
-.en{
-    margin: 2.5vw;
-    padding: 25px;
-    padding-top: 30px;
-    border: solid #191919 5px;
-    max-width: 25vw;
 }
 
 .en .logo{
@@ -204,6 +224,7 @@ footer{
     margin-top: -40px;
     padding-top: 70px;
     color: white;
+    color: #91FFFF;
     background-image: url("../image/up-arrow.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
