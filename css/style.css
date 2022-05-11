@@ -52,11 +52,23 @@ a {
 nav {
     height: 50px;
     background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo{
+    position: absolute;
+    display: flex;
+    right: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-img{
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 
 .nav-img:hover{
@@ -91,11 +103,14 @@ nav {
 }
 
 .nav-body li{
+
+    width: 100px;
     font-size: small;
+    text-align: center;
     color: #91FFFF;
     font-weight: 500;
-    padding-right: 2.5vw;
-    padding-left: 2.5vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
     transition: all 500ms ease;
 }
 
@@ -223,7 +238,7 @@ footer{
 }
 
 .back-to-top{
-    margin-right: 40px;
+    margin-right: 60px;
     padding-top: 70px;
     color: white;
     color: #91FFFF;
@@ -238,7 +253,7 @@ footer .cpright{
     color:  grey;
 }
 
-.inner{
+footer .inner{
     margin: 0 25px;
     color: white;
     display: flex;
