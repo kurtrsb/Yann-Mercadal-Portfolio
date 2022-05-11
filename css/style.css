@@ -172,6 +172,52 @@
         background-color: #191919;
     }
 
+    h1{
+        letter-spacing: 0.2em;
+        padding: 25px;
+        border: solid #191919 10px;
+        max-width: 70vw;
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 75px 0;
+    }
+
+    .wrapper {
+        min-height: 95vh;
+        background-image: url("../image/IMG_20220509_094039_219.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-text {
+        text-align: center;
+        margin-top: -10vw;
+        width: 24ch;
+        animation: appear 2s;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 6vw;
+    }
+
+    .second-text {
+        text-align: center;
+        opacity: 0;
+        width: 21ch;
+        animation: appear 2s forwards,steps(21);
+        animation-delay: 2s;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 5vw;
+    }
     
 
 }
