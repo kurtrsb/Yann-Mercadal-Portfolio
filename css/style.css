@@ -164,6 +164,14 @@
         transform: translateX(65vw);
     }
 
+    footer{
+        margin-top: auto;
+
+        width: 100vw;
+        height: 250px;
+        background-color: #191919;
+    }
+
     
 
 }
